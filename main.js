@@ -12,6 +12,14 @@ uploadButton.addEventListener("click", () => {
       preview.src = "";
     };
     reader.readAsDataURL(file);
+    input.value = "";
+  } else {
+    uploadButton.textContent = "Nenhuma imagem selecionada";
+    uploadButton.style.color = "rgb(230, 40, 40)";
+    setTimeout(() => {
+      uploadButton.textContent = "Subir Imagem";
+      uploadButton.style.color = "White";
+    }, 1000);
   }
 });
 
@@ -25,4 +33,3 @@ input.addEventListener("change", () => {
     reader.readAsDataURL(file);
   }
 });
-
