@@ -39,7 +39,12 @@ function createImageButton(url, key) {
   const img = document.createElement("img");
   img.src = url;
 
+  const h1 = document.createElement("h1");
+  h1.textContent = key
+
   button.appendChild(img);
+  button.appendChild(h1);
+
 
   button.addEventListener("click", () => {
     openImage(url, key);
@@ -52,6 +57,8 @@ function openImage(url, key) {
   fullImage.src = url;
   currentKey = key;
   console.log(currentKey)
+
+  document.getElementById("key").textContent = key
 
   overlay.style.display = "block";
   mainDisplay.style.display = "flex";
