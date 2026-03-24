@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(68, 68, 68);
+}
 header{
     height : 20vh;
     display: flex;
@@ -68,6 +71,20 @@ header{
     box-shadow: none;
     translate: (2px, 2px);
     background-color: rgb(59, 59, 59);
+}
+header button{
+    height: 4vh;
+    width: 9vw;
+    font-size: 1.5rem;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+header button:hover{
+    background-color:rgb(143, 142, 142);
 }
 #fileInput{
     display: none;

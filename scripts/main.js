@@ -2,6 +2,7 @@ let input = document.getElementById("fileInput");
 let uploadButton = document.getElementById("uploadButton");
 let image = document.getElementById("image");
 let preview = document.getElementById("preview");
+import { addImage } from "./CRUD.js";
 
 uploadButton.addEventListener("click", () => {
   let file = input.files[0];
@@ -9,6 +10,7 @@ uploadButton.addEventListener("click", () => {
     let reader = new FileReader();
     reader.onload = (e) => {
       image.src = e.target.result;
+      addImage(e.target.result);
       preview.src = "";
     };
     reader.readAsDataURL(file);
@@ -33,3 +35,7 @@ input.addEventListener("change", () => {
     reader.readAsDataURL(file);
   }
 });
+
+document.getElementById("changeTab").addEventListener('click',()=>{
+    window.location.href = 'password.html'
+})
