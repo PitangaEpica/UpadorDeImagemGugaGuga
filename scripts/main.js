@@ -13,7 +13,6 @@ uploadButton.addEventListener("click", () => {
     let reader = new FileReader();
     reader.onload = (e) => {
       image2.src = e.target.result;
-      preview.src = "";
       document.getElementById("promptSenha").style.display = "flex";
       document.getElementById("overlay").style.display = "block";
     };
