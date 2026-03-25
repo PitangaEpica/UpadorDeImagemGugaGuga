@@ -110,3 +110,76 @@ header button:hover{
     max-height: 15vh;
     max-width: auto;
 }
+
+.promptSenha{
+    z-index: 2;
+    position: fixed;
+    height: 50vh;
+
+    top: 25%;
+    left: 25%;
+
+    width: 50vw;
+
+    display: none;
+
+    border-radius: 20px;
+
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    border: 2px solid rgb(29, 29, 29);
+}
+
+.promptSenha h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-shadow: black 1px 1px 2px;
+}
+
+.promptSenha input{
+    width: 25%;
+}
+
+.promptSenha button{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 10%;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    width: 20%;
+    font-size: 1.5rem;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promptSenha button:hover{
+    background-color:rgb(143, 142, 142);
+}
+
+.promptSenha img{
+    max-width: 90%;
+    max-height: 50%;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+
+    background-color: rgb(0,0,0,0.3);
+
+    backdrop-filter: blur(5px);
+
+
+    z-index: 1;
+}
