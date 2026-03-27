@@ -72,9 +72,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid rgb(44, 44, 44);
     height: 3.5vh;
-    width: 50%;
 }
 .mainDisplay div button{
     height: 3vh;
@@ -113,6 +111,7 @@ body{
     margin: 10px;
     border: none;
     background-color: grey;
+    transition: all 0.2s;
     height: 200px;
     width: 200px;
     display: flex;
@@ -130,6 +129,7 @@ body{
     width: 220px;
     margin: 0;
     cursor: pointer;
+    box-shadow: 2px 2px 10px black;
 
 }
 
@@ -160,4 +160,48 @@ header button{
 header button:hover{
     cursor: pointer;
     background-color:rgb(143, 142, 142);
+}
+@media (max-width:370px) {
+    .logo h1{
+        display: none;
+    }
+    .logo img{
+        height: 10vh;
+        margin-left: 17%;
+    }
+    header{
+        display: flex;
+        margin: 0;
+        gap: 0;
+        align-items: center;
+        height: 12vh;
+    }
+    header div{
+        width: 40%;
+    }
+    header div button{
+        width: 100%;
+    }
+    .selectDisplays button{
+        width: 125px;
+        height: 125px;
+    }
+    .selectDisplays button:hover{
+        width: 125px;
+        height: 125px;
+        margin: 10px;
+    }
+    .selectDisplays button h1{
+        display: none;
+    }
+    .mainDisplay{
+        left: 10vw;
+        width: 80vw;
+    }
+    .mainDisplay h1{
+        font-size: small;
+    }
+    .mainDisplay div{
+
+    }
 }

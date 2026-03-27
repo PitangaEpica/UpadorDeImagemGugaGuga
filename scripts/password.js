@@ -2,7 +2,7 @@ const input = document.getElementById("passwordInput")
 const button = document.getElementById("submitPassword")
 
 button.addEventListener('click', ()=>{
-    if(input.value === "Megasex0"){
+    if(input.value === "Luigis"){
         window.location.href = 'viewer.html'
     }
     else if(input.value == ""){

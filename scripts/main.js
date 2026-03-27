@@ -18,7 +18,7 @@ uploadButton.addEventListener("click", () => {
     };
     reader.readAsDataURL(file);
   } else {
-    uploadButton.textContent = "Nenhuma imagem selecionada";
+    uploadButton.textContent = "Nenhuma imagem";
     uploadButton.style.color = "rgb(230, 40, 40)";
     setTimeout(() => {
       uploadButton.textContent = "Subir Imagem";
@@ -33,6 +33,7 @@ btnPassword.addEventListener('click', () => {
     let reader = new FileReader();
     reader.onload = (e) => {
       image.src = e.target.result;
+      preview.src = "";
       addImage(e.target.result);
       document.getElementById("promptSenha").style.display = "none";
       document.getElementById("overlay").style.display = "none";
