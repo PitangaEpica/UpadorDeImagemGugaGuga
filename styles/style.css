@@ -184,7 +184,7 @@ header button:hover{
     z-index: 1;
 }
 
-@media(max-width:370px){
+@media(max-width:500px){
     .logo h1{
         display: none;
     }
